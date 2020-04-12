@@ -1,3 +1,7 @@
+---
+typora-copy-images-to: ..\assets\image
+---
+
 layout: single
 title: Strassen Algorithm
 date: 2020-04-11 17:42:00 +0900
@@ -20,9 +24,9 @@ big-O 표현과 분할정복에 대해 먼저 알아보자
 시간복잡도 (Time Complexity)는 알고리즘을 수행하는데 연산들이 몇 번 이루어지는지를 숫자로 표기
 
 연산의 개수 -> 데이터의 개수 n의 함수 = 시간복잡도 함수
-$$
+
 T(n)
-$$
+
 이라 표기한다.
 
 
