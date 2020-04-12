@@ -1,9 +1,9 @@
----
 layout: single
 title: Strassen Algorithm
 date: 2020-04-11 17:42:00 +0900
 author: ByeongHeon
----
+
+[-------------------------------------------------]
 
 슈트라센 알고리즘을 알아보기에 앞서 
 
@@ -223,4 +223,4 @@ $$
 
 처음으로 n^3 이라는 틀에서 벗어났다는거에 슈트라센 알고리즘의 대단함을 느낌
 
-![](C:\Users\user\Desktop\image\제목 없음.png)
+![](C:\Users\user\my-awesome-site\assets\image\sisi.png)
