@@ -103,5 +103,85 @@ DFT(O(N^2)) >>>>>>>>>>>> FFT(O(N log N))
 
 
 
+## CODE
+
+GG;
 
 
+
+
+
+
+
+
+
+##  MATLAB을 이용한 그래프 그리기
+
+```
+fs = 100
+t =0:1/fs:1
+
+x = 3*cos(20*pi*t)+6*sin(30*pi*t-3/(4*pi))
+X = fft(x)
+
+N = length(x)
+n =0:N-1
+
+f = fs*n/N
+
+plot(f,2*abs(X)/N)
+```
+
+![그래프 1](https://user-images.githubusercontent.com/62762126/82143724-f9a81700-9880-11ea-938c-b0158ac52441.PNG)
+
+
+
+```
+fs = 100
+t =0:1/fs:1
+
+x = 3*cos(20*pi*t)+6*sin(30*pi*t-3/(4*pi))
+X = fft(x)
+
+N = length(x)
+n =0:N-1
+
+f = fs*n/N
+
+cutoff = ceil(N/2)
+cutoff =50
+X = X(1:cutoff)
+f = f(1:cutoff)
+
+plot(f,2*abs(X)/N)
+```
+
+![그래프 3](https://user-images.githubusercontent.com/62762126/82143730-ff9df800-9880-11ea-86fe-a73ce26b2dad.PNG)
+
+
+
+```
+fs = 1000
+t =0:1/fs:1
+
+x = 3*cos(20*pi*t)+6*sin(30*pi*t-3/(4*pi))
+
+X = fft(x)
+
+N = length(x)
+n =0:N-1
+
+f = fs*n/N
+
+cutoff =ceil(N/2)
+cutoff =100
+x = x(1:cutoff)
+X = X(1:cutoff)
+f = f(1:cutoff)
+
+plot(f,abs(x),'--c')
+hold on
+plot(f,2*abs(X)/N,'--p')
+```
+
+![그래프 2](https://user-images.githubusercontent.com/62762126/82143728-fe6ccb00-9880-11ea-9568-35f7bba31efe.PNG)
